@@ -14,7 +14,7 @@ for(i=1;i<=100;i++){
         // 72
         // 90
 
-// 2.Print tables odd numbers in between 1 to 10. Print the tables up to 20 multiples
+// 2.Print tables odd numbers in between 1 to 10. Print the tables up to 20 multiples.
 
 for(i=1;i<=10;i++){
     if(i%2==1){
