@@ -18,8 +18,8 @@ console.log("LCM of", num1, "and", num2, "is", LCM(num1, num2));
 
 // 2.Find GCD of 2 numbers using functions.
 
-const num1 = 20;
-const num2 = 12;
+const number1 = 20;
+const number2 = 12;
 function myFunction(a, b) {
   let smaller = Math.min(a, b);
   let hcf = 1;
@@ -32,7 +32,7 @@ function myFunction(a, b) {
 
   return hcf;
 }
-console.log("GCD of the given numbers is", myFunction(num1, num2));        
+console.log("GCD of the given numbers is", myFunction(number1, number2));        
 
 // Output: GCD of the given numbers is 4
 
