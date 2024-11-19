@@ -1,4 +1,4 @@
-// 1.Find LCM of 2 numbers using functions.
+// // 1.Find LCM of 2 numbers using functions.
 
 let num1 = 15;
 let num2 = 50;
@@ -11,7 +11,7 @@ function LCM(num1, num2) {
     }
   }
 }
-console.log("LCM of", num1, "and", num2, "is", LCM(num1, num2));
+console.log("LCM of", num1, "and", num2, "is", LCM(num1, num2));       
 
 // Output: LCM of 15 and 50 is 150  
 
@@ -32,7 +32,7 @@ function myFunction(a, b) {
 
   return hcf;
 }
-console.log("GCD of the given numbers is", myFunction(num1, num2));
+console.log("GCD of the given numbers is", myFunction(num1, num2));        
 
 // Output: GCD of the given numbers is 4
 
@@ -61,5 +61,16 @@ sample(520);
 //         520 is not an Armstrong Number
 
 
-// 4.Reduce the given number to single digit.
-// Output:
+// 4.Reduce the given number to single digit. 
+
+function reduceToSingleDigit(num) {
+  while (num >= 10) {
+    num = num.toString().split('').reduce((sum, digit) => sum + Number(digit), 0);
+  }
+  return num;
+}
+let number = 9875;
+let singleDigit = reduceToSingleDigit(number);
+console.log(singleDigit); 
+
+// Output: 2
